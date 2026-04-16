@@ -210,12 +210,14 @@ export default function Hero() {
         .hero-wordmark {
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
-          font-size: clamp(2rem, 5vw, 3.8rem);
-          letter-spacing: 0.6em;
+          font-size: clamp(1.2rem, 4.5vw, 3.8rem);
+          letter-spacing: clamp(0.15em, 1.5vw, 0.6em);
           text-transform: uppercase;
           color: var(--white);
           margin-bottom: 0.5rem;
           line-height: 1;
+          width: 100%;
+          overflow: hidden;
         }
         .hero-wordmark span { color: var(--cyan); }
         .hero-divider {
