@@ -22,7 +22,7 @@ export default function Hero() {
     window.addEventListener('resize', onResize);
 
     // ── 3-D cube helpers ────────────────────────────────────────────────────
-    const SIZE = Math.min(W, H) * 0.28;
+    const SIZE = Math.min(W, H) * 0.36;
 
     // 8 unit-cube vertices  (±1)
     const BASE_VERTS: [number, number, number][] = [
@@ -79,7 +79,7 @@ export default function Hero() {
     };
 
     // spotlight — slow circular orbit
-    const spotlight = { angle: 0, r: Math.min(W, H) * 0.38, radius: Math.min(W, H) * 0.46 };
+    const spotlight = { angle: 0, r: Math.min(W, H) * 0.32, radius: Math.min(W, H) * 0.58 };
 
     let angleY = 0.3;
     let angleX = 0.18;
@@ -147,19 +147,27 @@ export default function Hero() {
         ctx.moveTo(ax, ay);
         ctx.lineTo(bx, by);
 
-        const edgeAlpha = 0.08 + lit * 0.55;
-        const edgeWidth = 0.5 + lit * 1.5;
+        const edgeAlpha = 0.28 + lit * 0.65;
+        const edgeWidth = 1.2 + lit * 2.2;
         ctx.strokeStyle = `rgba(0, 180, 216, ${edgeAlpha})`;
         ctx.lineWidth = edgeWidth;
         ctx.stroke();
 
-        // glow on lit edges
-        if (lit > 0.25) {
+        // outer glow — always present, stronger when lit
+        ctx.beginPath();
+        ctx.moveTo(ax, ay);
+        ctx.lineTo(bx, by);
+        ctx.strokeStyle = `rgba(0, 180, 216, ${0.06 + lit * 0.22})`;
+        ctx.lineWidth = edgeWidth * 5;
+        ctx.stroke();
+
+        // bright core glow on lit edges
+        if (lit > 0.15) {
           ctx.beginPath();
           ctx.moveTo(ax, ay);
           ctx.lineTo(bx, by);
-          ctx.strokeStyle = `rgba(72, 202, 228, ${lit * 0.18})`;
-          ctx.lineWidth = edgeWidth * 4;
+          ctx.strokeStyle = `rgba(180, 240, 255, ${lit * 0.5})`;
+          ctx.lineWidth = 1;
           ctx.stroke();
         }
       });

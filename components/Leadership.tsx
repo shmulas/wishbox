@@ -6,7 +6,7 @@ const leaders = [
   { name: 'Jonathan Reed', role: 'Senior Partner' },
   { name: 'Michael Stone', role: 'Senior Partner' },
   { name: 'David Harman', role: 'Senior Partner' },
-  { name: 'Senior Partner', role: 'In Recruitment', pending: true },
+  { name: '[ Undisclosed ]', role: 'In Recruitment', pending: true },
 ];
 
 export default function Leadership() {
