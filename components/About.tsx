@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" style={{ background: 'var(--dark)', padding: '10rem 2rem' }}>
+    <section id="about" style={{ background: 'var(--dark)', padding: 'clamp(5rem, 10vw, 10rem) 1.5rem' }}>
       <style>{`
         .about-inner {
           max-width: 780px;

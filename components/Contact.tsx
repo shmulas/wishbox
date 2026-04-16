@@ -167,7 +167,7 @@ export default function Contact() {
   }, [termDone, phase]);
 
   return (
-    <section id="contact" style={{ background: 'var(--black)', padding: '10rem 4rem' }}>
+    <section id="contact" style={{ background: 'var(--black)', padding: 'clamp(5rem, 10vw, 10rem) clamp(1.5rem, 4vw, 4rem)' }}>
       <style>{`
         .contact-inner { max-width: 760px; margin: 0 auto; }
 

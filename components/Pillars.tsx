@@ -39,7 +39,7 @@ export default function Pillars() {
   const inView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section id="pillars" style={{ background: 'var(--dark)', padding: '8rem 4rem', borderTop: '1px solid rgba(0,180,216,0.07)', borderBottom: '1px solid rgba(0,180,216,0.07)' }}>
+    <section id="pillars" style={{ background: 'var(--dark)', padding: 'clamp(4rem, 8vw, 8rem) clamp(1.5rem, 4vw, 4rem)', borderTop: '1px solid rgba(0,180,216,0.07)', borderBottom: '1px solid rgba(0,180,216,0.07)' }}>
       <style>{`
         .pillars-grid {
           display: grid;

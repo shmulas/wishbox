@@ -199,8 +199,13 @@ export default function Hero() {
           position: relative;
           z-index: 2;
           text-align: center;
-          padding: 0 2rem;
+          padding: 160px 2rem 0;
           max-width: 900px;
+          width: 100%;
+        }
+        @media (max-width: 768px) {
+          .hero-content { padding-top: 90px; }
+          .hero-desc { margin-bottom: 2.5rem !important; }
         }
         .hero-wordmark {
           font-family: 'Montserrat', sans-serif;

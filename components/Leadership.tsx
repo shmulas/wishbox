@@ -11,7 +11,7 @@ const leaders = [
 
 export default function Leadership() {
   return (
-    <section id="leadership" style={{ background: 'var(--surface)', padding: '10rem 4rem' }}>
+    <section id="leadership" style={{ background: 'var(--surface)', padding: 'clamp(5rem, 10vw, 10rem) clamp(1.5rem, 4vw, 4rem)' }}>
       <style>{`
         .leadership-inner {
           max-width: 1100px;

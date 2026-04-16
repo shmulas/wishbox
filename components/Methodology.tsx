@@ -22,7 +22,7 @@ const pillars = [
 
 export default function Methodology() {
   return (
-    <section id="methodology" style={{ background: 'var(--surface)', padding: '10rem 4rem' }}>
+    <section id="methodology" style={{ background: 'var(--surface)', padding: 'clamp(5rem, 10vw, 10rem) clamp(1.5rem, 4vw, 4rem)' }}>
       <style>{`
         .method-inner {
           max-width: 1100px;

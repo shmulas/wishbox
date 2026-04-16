@@ -67,7 +67,7 @@ export default function Services() {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="services" style={{ background: 'var(--black)', padding: '10rem 4rem' }}>
+    <section id="services" style={{ background: 'var(--black)', padding: 'clamp(5rem, 10vw, 10rem) clamp(1.5rem, 4vw, 4rem)' }}>
       <style>{`
         .services-header {
           max-width: 1200px;
@@ -235,10 +235,10 @@ export default function Services() {
           color: var(--text-dim);
         }
         @media (max-width: 700px) {
-          .service-header-row { grid-template-columns: 50px 1fr auto; padding: 2rem 1.5rem; gap: 1rem; }
-          .service-body { padding: 0 1.5rem 0 1.5rem; }
-          .bullet-label { min-width: 120px; }
-          section#services { padding: 6rem 1.5rem; }
+          .service-header-row { grid-template-columns: 50px 1fr auto; padding: 1.5rem 1rem; gap: 0.75rem; }
+          .service-body { padding: 0 1rem 0 1rem; }
+          .bullet-label { min-width: unset; width: 100%; }
+          .service-bullet { flex-wrap: wrap; }
         }
       `}</style>
 

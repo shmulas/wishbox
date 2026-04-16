@@ -6,7 +6,7 @@ const cities = ['Tel Aviv', 'London', 'New York', 'Singapore', 'Zurich'];
 
 export default function Locations() {
   return (
-    <section id="locations" style={{ background: 'var(--black)', padding: '9rem 4rem' }}>
+    <section id="locations" style={{ background: 'var(--black)', padding: 'clamp(5rem, 9vw, 9rem) clamp(1.5rem, 4vw, 4rem)' }}>
       <style>{`
         .locations-inner {
           max-width: 900px;

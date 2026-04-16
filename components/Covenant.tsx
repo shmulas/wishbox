@@ -19,7 +19,7 @@ const pledges = [
 
 export default function Covenant() {
   return (
-    <section id="covenant" style={{ background: 'var(--dark)', padding: '10rem 4rem' }}>
+    <section id="covenant" style={{ background: 'var(--dark)', padding: 'clamp(5rem, 10vw, 10rem) clamp(1.5rem, 4vw, 4rem)' }}>
       <style>{`
         .covenant-inner {
           max-width: 1100px;
