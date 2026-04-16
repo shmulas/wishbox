@@ -210,8 +210,8 @@ export default function Hero() {
         .hero-wordmark {
           font-family: 'Montserrat', sans-serif;
           font-weight: 200;
-          font-size: clamp(1.6rem, 6.5vw, 3.8rem);
-          letter-spacing: clamp(0.12em, 2vw, 0.6em);
+          font-size: clamp(1.9rem, 8vw, 3.8rem);
+          letter-spacing: clamp(0.1em, 2.5vw, 0.6em);
           text-transform: uppercase;
           color: var(--white);
           margin-bottom: 0.5rem;
