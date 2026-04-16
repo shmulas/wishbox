@@ -6,7 +6,7 @@ import { useState } from 'react';
 const services = [
   {
     numeral: 'I',
-    title: 'Evidence-Grade Intelligence™',
+    title: 'Evidence-Grade Intelligence by WishBox™',
     category: 'Strategic Litigation Support & Complex Disputes',
     intro: 'WISHBOX serves as a force multiplier for legal teams. While counsel manages the courtroom, we secure the evidentiary foundation to shift the balance of power.',
     bullets: [
@@ -125,11 +125,12 @@ export default function Services() {
         }
         .service-category {
           font-family: 'Montserrat', sans-serif;
-          font-weight: 200;
-          font-size: 0.6rem;
+          font-weight: 300;
+          font-size: 0.62rem;
           letter-spacing: 0.35em;
           text-transform: uppercase;
-          color: var(--cyan-dim);
+          color: var(--cyan-light);
+          opacity: 0.85;
         }
         .service-title {
           font-family: 'Cormorant Garamond', serif;
