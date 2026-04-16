@@ -6,7 +6,7 @@ import { useState } from 'react';
 const services = [
   {
     numeral: 'I',
-    title: 'Evidence-Grade Intelligence by WishBox™',
+    title: 'Evidence-Grade Intelligence BY WISHBOX™',
     category: 'Strategic Litigation Support & Complex Disputes',
     intro: 'WISHBOX serves as a force multiplier for legal teams. While counsel manages the courtroom, we secure the evidentiary foundation to shift the balance of power.',
     bullets: [
